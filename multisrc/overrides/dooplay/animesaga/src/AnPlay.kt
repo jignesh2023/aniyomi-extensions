@@ -9,12 +9,14 @@ import okhttp3.FormBody
 import okhttp3.Response
 import org.jsoup.nodes.Element
 
-class AnimeSAGA : DooPlay(
+class AnPlay : DooPlay(
     "hi",
-    "AnimeSAGA",
-    "https://www.animesaga.in",
+    "AnPlay",
+    "https://AnPlay.in",
 ) {
-    private val videoHost = "https://cdn.animesaga.in"
+    override val id: Long = 3168615925539503340L
+
+    private val videoHost = "https://stream.anplay.in"
 
     // ============================== Popular ===============================
     override fun popularAnimeSelector() = "div.top-imdb-list > div.top-imdb-item"
